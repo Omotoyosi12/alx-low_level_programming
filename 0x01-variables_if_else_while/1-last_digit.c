@@ -1,18 +1,20 @@
+#include <stdio.h>
+
 #include <stdlib.h>
 
 #include <time.h>
 
-#include <stdio.h>
+/* more headers goes there */
 
-
+/* betty style doc for function main goes there */
 
 /**
 
- * main - prints the last digit of the random
+ * main -  main function
 
- * number stored in the variable n
+ * Description: task 2
 
- * Return: Always 0 (Success)
+ * Return: 0 always (Success)
 
  */
 
@@ -20,28 +22,42 @@ int main(void)
 
 {
 
-	int n;
+int n;
 
+int last;
 
+srand(time(0));
 
-	srand(time(0));
+n = rand() - RAND_MAX / 2;
 
-	n = rand() - RAND_MAX / 2;
+/* your code goes here */
 
-	printf("Last digit of %d is %d ", n, n % 10);
+last = n % 10;
 
-	if (n % 10 > 5)
+if (last == 0)
 
-		printf("and is greater than 5\n");
+{
 
-	else if (n % 10 == 0)
+printf("Last digit of %i is %i and is 0\n", n, last);
 
-		printf("and is 0\n");
+}
 
-	else if (n % 10 < 6 && n % 10 != 0)
+else if (last > 5)
 
-		printf("and is less than 6 and not 0\n");
+{
 
-	return (0);
+printf("Last digit of %i is %i and is greater than 5\n", n, last);
+
+}
+
+else if (last < 6 && last != 0)
+
+{
+
+printf("Last digit of %i is %i and is less than 6 and not 0\n", n, last);
+
+}
+
+return (0);
 
 }
