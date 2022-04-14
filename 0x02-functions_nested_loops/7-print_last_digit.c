@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_last_digit - Entry Function
+ * print_last_digit - Ectry Function
  * @n: integer to get digit
  * Return: last digit
  */
