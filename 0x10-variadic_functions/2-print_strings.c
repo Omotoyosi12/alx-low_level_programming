@@ -5,8 +5,8 @@
 
 /**
  * print_strings - prints all strings with a separator
- * @separator: separe strings
- * @separator: separe strings
+ * @separator: separe string
+ * @n: int, number of undefined arguments
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
